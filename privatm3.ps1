@@ -2926,10 +2926,8 @@ function processInput {
 
 # Main function that runs the selected techniques
 function main {
-    while ($true) {
-        checkSePrivileges; if (-not $scanOnly) { trySePrivileges } 
-	checkTokenImpersonation; if (-not $scanOnly) { tryTokenImpersonation
-    }
+    checkSePrivileges; if (-not $scanOnly) { trySePrivileges } 
+	checkTokenImpersonation; if (-not $scanOnly) { tryTokenImpersonation }
 }
 
 main
